@@ -43,7 +43,7 @@ import Cookie from "js-cookie";
 
 // Create an Axios instance with default settings
 const useAxios = axios.create({
-    baseURL: import.meta.env.VITE_API_BASE_URL,
+    baseURL: import.meta.env.VITE_BASE_URL || 'http://127.0.0.1:8000/',
     timeout: 10000000,
     headers: {
         "Content-Type": "application/json",
