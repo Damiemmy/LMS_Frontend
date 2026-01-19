@@ -26,6 +26,11 @@ function Login() {
     }
   };
 
+  useEffect(()=>{
+    console.log(email)
+    console.log(password)
+},[email,password])
+
   return (
     <>
       <BaseHeader />
